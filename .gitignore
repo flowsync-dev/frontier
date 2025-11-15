@@ -1,0 +1,113 @@
+# Node / Package Managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# Build Outputs
+dist/
+build/
+out/
+public/build/
+.next/
+.vite/
+.cache/
+.parcel-cache/
+coverage/
+.nyc_output/
+coverage-*.json
+
+# Next.js
+.next/
+out/
+.vercel
+*.tsbuildinfo
+
+# TypeScript
+*.tsbuildinfo
+*.tgz
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+.env.*.secret
+.env.production.local
+.env.development.local
+.env.test.local
+!.env.example
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Testing
+coverage/
+.nyc_output/
+**/.jest-cache
+**/.coverage
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+.sass-cache/
+.parcel-cache/
+dist/
+build/
+
+# Misc
+.turbo/
+.eslintcache
+.env.*.local
+.cache/
+.pnpm-store/
+.vercel/
+.next/
+tmp/
+temp/
+.pids
+*.seed
+*.pid
