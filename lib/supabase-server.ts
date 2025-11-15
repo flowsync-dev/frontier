@@ -1,5 +1,3 @@
-"use server"
-
 import { createServerClient } from "@supabase/ssr"
 import { cookies } from "next/headers"
 
@@ -23,14 +21,14 @@ export async function getSupabaseServer() {
         return cookieStore.getAll()
       },
       setAll(cookiesToSet) {
-        try {
-          cookiesToSet.forEach(({ name, value, options }) => 
+        cookiesToSet.forEach(({ name, value, options }) => {
+          try {
             cookieStore.set(name, value, options)
-          )
-        } catch (error) {
-          // Handle cookie setting errors in middleware/server components
-          console.error('Error setting cookies:', error)
-        }
+          } catch (error) {
+            // Silently ignore cookie setting errors in non-Server Action contexts
+            // Cookies can only be modified in Server Actions or Route Handlers
+          }
+        })
       },
     },
   })
